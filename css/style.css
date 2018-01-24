@@ -1,0 +1,138 @@
+@font-face {
+    font-family: OSP-DIN;
+    src: url(../font/OSP-DIN.ttf);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: 'OSP-DIN', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+
+#leftColumn {
+    display: flex;
+    flex-direction: column;
+}
+#leftColumn > * {
+    margin: 5vmin;
+}
+
+#currently {
+    font-size: 8vmin;
+    line-height: 9vmin;
+}
+#currently .wi {
+    font-size: 18vmin;
+}
+#currently .desc {
+    margin-bottom: 0.5vmin;
+}
+#currently > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#currently > div > div {
+    margin: 1vmin;
+}
+#darksky {
+    color: #ccc;
+    font-size: 3.5vmin;
+}
+
+#date-time {
+    color: #ccc;
+}
+#time {
+    font-size: 8vmin;
+}
+#date {
+    font-size: 4vmin;
+}
+
+
+
+#forecasts {
+    display: flex;
+    flex-direction: row;
+}
+.forecast {
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+}
+
+#forecast1 {
+    color: #FFFFFF;
+}
+#forecast2 {
+    color: #CCCCCC;
+}
+#forecast3 {
+    color: #999999;
+}
+#forecast4 {
+    color: #777777;
+}
+#forecast5 {
+    color: #777777;
+}
+
+.forecast .wi {
+    font-size: 8vmin;
+    line-height: 14vmin;
+}
+
+.day {
+    font-size: 3.5vmin;
+    margin-bottom: 1.5vmin;
+}
+.forecast .desc {
+    display: none;
+}
+.highTemp {
+    font-size: 3vmin;
+}
+.lowTemp {
+    font-size: 3vmin;
+}
+.currentTemp {
+}
+
+
+
+
+#rightColumn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#photos {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: background-image 1s ease-in-out;
+}

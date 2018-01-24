@@ -1,0 +1,4 @@
+// vim: ft=javascript
+
+DARK_SKY_TOKEN = "get-it-from-dark-sky";
+

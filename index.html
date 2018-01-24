@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="application-name" content="b-ryan Dash"/>
+    <title>b-ryan Dash</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="leftColumn">
+      <!-- Current date and time information -->
+      <div id="date-time">
+        <div id="time"></div>
+        <div id="date"></div>
+      </div>
+
+      <div id="currently">
+        <!-- Current weather information -->
+        <div>
+          <div class="icon"></div>
+          <div class="temp"></div>
+        </div>
+        <div id="darksky"></div>
+      </div>
+
+      <div id="forecasts">
+        <!-- Upcoming forecasts -->
+        <div class="forecast" id="forecast1">
+          <a class="yahooLink" href="#" target="_blank">
+            <div class="day"></div>
+            <div class="icon"></div>
+            <div class="desc"></div>
+            <div class="highTemp">High: <span class="high"></span></div>
+            <div class="lowTemp">Low: <span class="low"></span></div>
+          </a>
+        </div>
+        <div class="forecast" id="forecast2">
+          <a class="yahooLink" href="#" target="_blank">
+            <div class="day"></div>
+            <div class="icon"></div>
+            <div class="desc"></div>
+            <div class="highTemp">High: <span class="high"></span></div>
+            <div class="lowTemp">Low: <span class="low"></span></div>
+          </a>
+        </div>
+        <div class="forecast" id="forecast3">
+          <a class="yahooLink" href="#" target="_blank">
+            <div class="day"></div>
+            <div class="icon"></div>
+            <div class="desc"></div>
+            <div class="highTemp">High: <span class="high"></span></div>
+            <div class="lowTemp">Low: <span class="low"></span></div>
+          </a>
+        </div>
+        <div class="forecast" id="forecast4">
+          <a class="yahooLink" href="#" target="_blank">
+            <div class="day"></div>
+            <div class="icon"></div>
+            <div class="desc"></div>
+            <div class="highTemp">High: <span class="high"></span></div>
+            <div class="lowTemp">Low: <span class="low"></span></div>
+          </a>
+        </div>
+        <div class="forecast" id="forecast5">
+          <a class="yahooLink" href="#" target="_blank">
+            <div class="day"></div>
+            <div class="icon"></div>
+            <div class="desc"></div>
+            <div class="highTemp">High: <span class="high"></span></div>
+            <div class="lowTemp">Low: <span class="low"></span></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="rightColumn">
+      <div id="photos">
+      </div>
+      <div id="ynab">
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./js/app.js"></script>
+
+  </body>
+</html>
