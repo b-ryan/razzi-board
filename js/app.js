@@ -226,4 +226,5 @@ $(window).on("load", function() {
   setInterval(darkSky, 1000 * 60 * 10);
 
   fetchYnabBalances();
+  setInterval(fetchYnabBalances, 1000 * 60 * 60 * 4);
 });
