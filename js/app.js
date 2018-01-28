@@ -197,12 +197,22 @@ function fetchYnabBalances() {
     var balances = result.balances;
     for (var i = 0; i < balances.length; i++) {
       var balance = balances[i];
-      elem.append("<span>" + balance.balance_str + "</span>");
+      var extraClass = "";
+      if (balance.balance <= 0) {
+        extraClass = "text-danger";
+      }
+      elem.append(
+        '<div class="ynab-balance">' +
+        '<span class="category">' + balance.category + "</span>" +
+        '<span class="balance ' + extraClass + '">' + balance.balance_str + "</span>" +
+        "</div>"
+      );
+
     }
   });
 }
 
-$(window).load(function() {
+$(window).on("load", function() {
   queryYahoo();
   setInterval(queryYahoo, 1000 * 60 * 15);
 
